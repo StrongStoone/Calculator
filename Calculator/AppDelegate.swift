@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Initialize Google Mobile Ads SDK
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-1467530008981019/8473801889")
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544/2934735716")
         
         
         return true
