@@ -27,8 +27,21 @@ class ViewController: UIViewController {
                     display.text = textCurrentlyInDisplay + digit
                 }
             }
+            else if(digit == "0") {
+                if(displayValue == 0){
+                    display.text = "0"
+                }
+                else {
+                    display.text = textCurrentlyInDisplay + digit
+                }
+            }
             else {
+                if(displayValue == 0) {
+                    display.text = digit
+                }
+                else {
                 display.text = textCurrentlyInDisplay + digit
+                }
             }
         } else {
             display.text = digit
@@ -63,9 +76,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Google Mobile Ads SDK version: \(GADRequest.sdkVersion())")
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-1467530008981019/8473801889"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
+        
         
         for button in buttons {
             button.layer.cornerRadius = 10
